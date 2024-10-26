@@ -10,15 +10,7 @@ type SpellProps = {
 	className?: string;
 };
 
-function Spell({ children, noCaption, size = 'sm', ...rest }: SpellProps) {
-	return (
-		<Text
-			size={size}
-			noCaption={noCaption}
-			{...rest}
-		>
-			{getFlagByKeyword(children)}
-		</Text>
-	);
+function Spell({ children, ...rest }: SpellProps) {
+	return <Text {...rest}>{getFlagByKeyword(children)}</Text>;
 }
 export default Spell;
