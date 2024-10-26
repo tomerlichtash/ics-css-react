@@ -1,0 +1,18 @@
+.root {
+	display: inline-flex;
+	align-items: center;
+	gap: 1em;
+}
+
+.flag {
+	position: relative;
+}
+
+.hint {
+	position: absolute;
+	top: -1.25em;
+	font-size: 0.85em;
+	font-weight: 300;
+	width: 100%;
+	text-align: center;
+}
