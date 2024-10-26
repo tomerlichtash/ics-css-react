@@ -1,0 +1,14 @@
+body {
+	--icsincss-color-white: white;
+	--icsincss-color-blue: #43a0fd;
+	--icsincss-color-red: #fd5557;
+	--icsincss-color-yellow: #fffe77;
+	--icsincss-color-black: #332d2e;
+	--icsincss-pixel: 1em;
+	--icsincss-canvas-size: calc(var(--icsincss-pixel) * 5);
+	--icsincss-hint-position-xs: -2em;
+	--icsincss-hint-position-sm: -3em;
+	--icsincss-hint-position-md: -4em;
+	--icsincss-hint-position-lg: -5em;
+	--icsincss-text-gap: 1em;
+}
