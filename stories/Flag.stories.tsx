@@ -50,6 +50,7 @@ export const All: Story = {
 				<Flag
 					value={c.code}
 					key={idx}
+					type={c.type}
 					style={{ margin: '0 1em 1em' }}
 				/>
 			);

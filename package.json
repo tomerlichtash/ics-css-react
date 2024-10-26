@@ -27,11 +27,8 @@
 	"author": "tomerlichtash",
 	"license": "MIT",
 	"keywords": [
-		"ui",
-		"components",
 		"typescript",
-		"react",
-		"css-vars"
+		"react"
 	],
 	"peerDependencies": {
 		"react": ">=16.8.0",
