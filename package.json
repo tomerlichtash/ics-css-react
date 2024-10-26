@@ -1,6 +1,6 @@
 {
 	"name": "@tomerlichtash/ics-css-react",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"description": "ICS-in-CSS",
 	"main": "dist/cjs/bundle.js",
 	"module": "dist/esm/bundle.js",
