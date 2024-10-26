@@ -7,7 +7,6 @@ const meta = {
 	title: 'Flag',
 	component: Flag,
 	tags: ['autodocs'],
-
 	argTypes: {
 		value: {
 			options: Codes.map((c) => c.code?.toLowerCase()),
