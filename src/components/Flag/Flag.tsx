@@ -8,6 +8,7 @@ type FlagProps = {
 	type?: FlagType;
 	size?: FlagSize;
 	className?: string;
+	style?: Record<string, string>;
 };
 
 const flagType: Partial<Record<FlagType, string>> = {

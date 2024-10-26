@@ -1,7 +1,7 @@
 import React from 'react';
 import Text from '../Text/Text';
 import type { FlagSize } from '../../types';
-import { getFlagByKeyword, getFlagByKey } from '../helpers';
+import { getFlagByKeyword } from '../helpers';
 
 type SpellProps = {
 	children: string;

@@ -7,11 +7,7 @@ const meta = {
 	title: 'Flag',
 	component: Flag,
 	tags: ['autodocs'],
-	args: {
-		value: 'charlie',
-		type: 'normal',
-		size: 'md',
-	},
+
 	argTypes: {
 		value: {
 			options: Codes.map((c) => c.code?.toLowerCase()),
@@ -33,6 +29,11 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
+	args: {
+		value: 'alfa',
+		type: 'normal',
+		size: 'md',
+	},
 	render: function Render({ value, ...args }) {
 		return (
 			<Flag
@@ -43,17 +44,41 @@ export const Default: Story = {
 	},
 };
 
-export const All: Story = {
-	render: function Render({ value, ...args }) {
-		return Codes.map((c, idx) => {
-			return (
-				<Flag
-					value={c.code}
-					key={idx}
-					type={c.type}
-					style={{ margin: '0 1em 1em' }}
-				/>
-			);
-		});
+export const Gallery: Story = {
+	render: function Render({ ...args }) {
+		return (
+			<div
+				style={{
+					display: 'inline-flex',
+					flexWrap: 'wrap',
+					gap: '2em',
+					fontFamily: 'Nunito Sans',
+				}}
+			>
+				{Codes.map((c, idx) => {
+					return (
+						<div
+							style={{
+								display: 'inline-flex',
+								flexDirection: 'column',
+								alignItems: 'center',
+								gap: '0.25em',
+							}}
+							key={idx}
+						>
+							<Flag
+								value={c.code}
+								key={idx}
+								type={c.type}
+								{...args}
+							/>
+							<span>{c.ipa}</span>
+							<span>{c.respell}</span>
+							<span style={{ fontWeight: 700 }}>{c.code}</span>
+						</div>
+					);
+				})}
+			</div>
+		);
 	},
 };

@@ -599,7 +599,7 @@
 	border-right: var(--size) solid var(--red);
 }
 
-.decimal {
+.pennant {
 	color: white;
 	background: repeating-linear-gradient(
 		90deg,

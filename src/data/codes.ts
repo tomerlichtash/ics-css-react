@@ -159,7 +159,7 @@ export const Codes: CodeProps[] = [
 	},
 	{
 		type: 'number',
-		code: 'Decimal',
+		code: 'Pennant',
 		label: 'Answering pennant or decimal',
 	},
 	{
