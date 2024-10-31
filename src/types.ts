@@ -1,6 +1,6 @@
 export type FlagType = 'normal' | 'number' | 'substitute';
 
-export type FlagSize = 'xs' | 'sm' | 'md' | 'lg';
+export type FlagSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
 export type CodeProps = {
 	code: string;
